@@ -10,3 +10,10 @@ fi
 
 # Install git-spice
 brew install --cask abhinav/tap/git-spice
+
+# --- Dotfiles you want in $HOME
+ln -sf "$DOTFILES_DIR/.alias" "$HOME/.alias"
+
+# Ensure the aliases file is sourced (bash & zsh)
+grep -q 'source ~/.alias' "$HOME/.bashrc" 2>/dev/null || echo '[ -f ~/.alias ] && source ~/.alias' >> "$HOME/.bashrc"
+grep -q 'source ~/.alias' "$HOME/.zshrc" 2>/dev/null || echo '[ -f ~/.alias ] && source ~/.alias' >> "$HOME/.zshrc"
