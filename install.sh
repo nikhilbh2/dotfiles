@@ -15,6 +15,9 @@ fi
 # Install git-spice
 brew install --cask abhinav/tap/git-spice
 
+# Install pup (Datadog CLI)
+brew install datadog-labs/pack/pup
+
 # --- Dotfiles you want in $HOME
 ln -sf "$DOTFILES_DIR/.alias" "$HOME/.alias"
 
