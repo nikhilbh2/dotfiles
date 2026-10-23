@@ -18,6 +18,9 @@ brew install --cask abhinav/tap/git-spice
 # Install pup (Datadog CLI)
 brew install datadog-labs/pack/pup
 
+# Install bk
+bk configure --org VantaInc --token $BUILDKITE_API_TOKEN --force
+
 # --- Dotfiles you want in $HOME
 ln -sf "$DOTFILES_DIR/.alias" "$HOME/.alias"
 
