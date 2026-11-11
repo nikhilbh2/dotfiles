@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Ona agent shells inject provider credentials; use the user's standalone login.
+exec env -u CODEX_HOME -u CODEX_API_KEY codex "$@"

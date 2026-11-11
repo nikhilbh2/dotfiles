@@ -6,6 +6,7 @@ SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 DOTFILES_DIR="${DOTFILES_DIR:-$SCRIPT_DIR}"
 
 bash "$DOTFILES_DIR/install-skills.sh"
+bash "$DOTFILES_DIR/install-codex.sh"
 
 # Install Homebrew if missing
 if ! command -v brew &>/dev/null; then
