@@ -1,0 +1,25 @@
+README.md
+  s_d14a08fdd4c57e::t_acc690ae923cf9 33-82
+bin/codex-vanta
+  s_d14a08fdd4c57e::t_4ba0bf62bedeaf 1-5
+install-codex.sh
+  s_d14a08fdd4c57e::t_102c802c7d9146 1-17
+install.sh
+  s_d14a08fdd4c57e::t_34e5cb063cead9 9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.9",
+  "base_commit_sha": "f1d355d320aef37c3c869c8d6bc54732e5290f82",
+  "prompts": {},
+  "sessions": {
+    "s_d14a08fdd4c57e": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "s_d14a08fdd4c57e",
+        "model": "unknown"
+      },
+      "human_author": "Nikhil Bhansali <nikhilbh@gmail.com>"
+    }
+  }
+}
