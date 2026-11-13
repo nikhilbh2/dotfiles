@@ -121,8 +121,14 @@ A run's `status` is `running`, `awaiting_synthesis`, `synthesized`, `failed`, or
 
 To add a harness, add one entry to `HARNESSES` in `scripts/thabto.py`. The entry gives the command, the function that reads the final answer, and the credentials to remove.
 
-Edit the source in `wihli-dotfiles/skills/.local/share/skills/thabto/`, then run `./install.sh`. Run the tests from the repository root:
+Edit `skills/thabto/` in this repository, then run `bash ./install-skills.sh`.
+The driver and helpers are vendored; see [UPSTREAM.md](UPSTREAM.md).
+
+Run the local offline smoke tests from the repository root:
 
 ```sh
-python3 -m unittest tests/test_thabto.py tests/test_thabto_finish.py tests/test_thabto_stats.py tests/test_thabto_label.py
+python3 -m unittest discover -s tests -v
 ```
+
+These tests validate installation, bundle paths, and CLI help. They do not run
+paid model calls or establish provider authentication or read-only enforcement.

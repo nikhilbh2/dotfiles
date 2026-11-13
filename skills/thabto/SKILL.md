@@ -93,6 +93,6 @@ Runs live under `$XDG_STATE_HOME/thabto/<run-id>/`, defaulting to `~/.local/stat
 
 ## Installation and discovery
 
-Canonical source: `wihli-dotfiles/skills/.local/share/skills/thabto/`. Install through the repository's `install.sh`; never edit installed copies. The shared installation is `~/.local/share/skills/thabto`. Claude Code uses `~/.claude/skills/thabto`; Codex, Pi, and OpenCode use the shared `~/.agents/skills/thabto` discovery path. The installer also maintains `~/.codex/skills/thabto`.
+Canonical source: `skills/thabto/` in this dotfiles repository. Install through the repository's `install-skills.sh`; never edit installed copies. The shared installation is `~/.local/share/skills/thabto`. Claude Code uses `~/.claude/skills/thabto`; Codex, Pi, and OpenCode use the shared `~/.agents/skills/thabto` discovery path. The installer also maintains `~/.codex/skills/thabto`.
 
 The core skill uses files and foreground commands. Record discovery and behavior separately for each harness; link existence alone does not prove invocation works.
