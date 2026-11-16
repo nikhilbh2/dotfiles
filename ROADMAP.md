@@ -6,12 +6,14 @@
 - [x] Add provider-neutral `handoff` and `resume` with templates.
 
 ## Next, in small slices
-- [ ] Choose an approved private work-context repository; keep work data out of
+- [x] Choose an approved private work-context repository; keep work data out of
       public dotfiles. Establish an index, owner and save/publish policy.
+- [x] Define procedural capture rules: checkpoint triggers, per-run records,
+      coordinator-merged summaries, bounded push retry. Procedural, not hooks.
 - [ ] Exercise a harmless sample handoff in fresh Claude and Codex sessions.
       Verify actual discovery, not just symlink existence. Then pilot one project.
 - [ ] Add `project-brief` if the handoff brief section proves insufficient.
-- [ ] Add a small validated per-run registry and `project-status` reconciliation:
+- [ ] Add validation for the per-run registry and `project-status` reconciliation:
       environment/session, branch/HEAD, owner, observed state, next action, timestamp.
 - [ ] Add a setup diagnostic that reports CLI versions, skill discovery and private
       context access without exposing credentials.

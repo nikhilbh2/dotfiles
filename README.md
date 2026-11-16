@@ -44,7 +44,9 @@ python3 -m unittest discover -s tests -v
 ```
 
 The offline suite tests fresh/repeated installation, legacy-link migration,
-conflicts, dry-run, custom paths and bundled command help. It makes no model calls.
+conflicts, dry-run, custom paths and bundled command help. It also guards the
+handoff/resume contract text (checkpoint triggers, capture fields, size bounds,
+concurrent-writer rules) and scans those skills for private identifiers. It makes no model calls.
 Use the [manual smoke test](tests/MANUAL.md) to verify discovery and a fresh-session
 handoff with each authenticated provider. See [ROADMAP.md](ROADMAP.md) for follow-ons.
 

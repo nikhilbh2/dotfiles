@@ -18,7 +18,7 @@ Updated: <UTC timestamp> · Owner: <owner> · Record status: <draft/local/remote
 - Task / PR state, evidence and observation time:
 - Tests / CI: <command or link, HEAD, result, time; not-run != passed>
 - Artifacts: <location, preserved or temporary, missing items>
-- Active worker / environment / session: <optional pointer, last verified status>
+- Active runs: <link to each run record, owner, state, last verified UTC>
 
 ## Handoff
 - Completed:
@@ -26,6 +26,9 @@ Updated: <UTC timestamp> · Owner: <owner> · Record status: <draft/local/remote
 - Decision needed and recommendation:
 - Exact next action and verification:
 - Durability: <where saved, remote verification, what remains only local>
+
+## History
+- <links to commits, PRs, superseded run records; not copied logs>
 
 ## Resume check
 Verify HEAD, working tree, live task/PR/CI state and worker ownership before acting.
